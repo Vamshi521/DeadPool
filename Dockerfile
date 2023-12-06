@@ -1,4 +1,4 @@
-FROM openJDK:17- alpine
+FROM openjdk:17-alpine
 ADD target/Example.jar Example.jar
-ENTRYPOINT["JAVA","-JAR","Example.jar"]
+ENTRYPOINT ["java","-jar","Example.jar"]
 EXPOSE 8080
